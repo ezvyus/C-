@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	string yazi1 = "Bu bir stringdir.";
+	string yazi2 = "Iki string endline olmadan yazilirsa yan yana gozukur.";
+	string yazi3 = "Iki string endline ile yazilirsa alt alta gozukur.";
+	cout << yazi1 << yazi2 << endl;
+	cout << yazi1 << endl << yazi3;
+	return 0;
+}
