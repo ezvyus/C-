@@ -1,0 +1,35 @@
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int a,b;
+	int islem;
+	cout << "Hesap Makinesi" << endl;
+	cout << "1. Islem Carpma " << endl;
+	cout << "2. Islem Bolme " << endl;
+	cout << "3. Islem Toplama" << endl;
+	cout << "4. Islem Cikarma" << endl;
+	cout << "1. Sayiyi Giriniz : " << endl;
+	cin >> a;
+	cout << "2. Sayiyi Giriniz : " << endl;
+	cin >> b;
+	cout << "Islemi Giriniz : " << endl;
+	cin >> islem;
+	if(islem==1) {
+		cout << "Islemin toplami : " << a*b << endl;
+	}
+	else if(islem==2) {
+		cout << "Islemin Toplam : " << a/b << endl;
+	}
+	else if(islem==3) {
+		cout << "Islemin Toplami : " << a+b << endl;
+	}
+	else if(islem==4) {
+		cout << "Islemin Toplami : " << a-b << endl;
+	}
+	else {
+		cout << "Yanlis islem girdiniz." << endl;
+	}
+	return 0;
+}
