@@ -9,6 +9,10 @@ int main() {
 	cin >> sayi2;
 	cout << "Ucuncu sayiyi giriniz : " << endl;
 	cin >> sayi3;
+	/* 
+	cout << "Uc adet sayi giriniz : "
+	cin >> sayi1 >> sayi2 >> sayi3; Koduyla ayni zamanda uc inputa alabiliriz.
+	*/
 	cout << "Girdiginiz sayilarin toplami : " << sayi1 + sayi2 + sayi3 << endl;
 	return 0;
 }
