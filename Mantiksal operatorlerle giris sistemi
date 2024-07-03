@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	string sifre= "123hakan";
+	string sifreinput;
+	string isim= "envy";
+	string isiminput;
+	cout << "Kullanici adi girniz : " << endl;
+	cin >> isiminput;
+	cout << "Sifre giriniz : " << endl;
+	cin >> sifreinput;
+    if (isiminput==isim && sifreinput==sifre) {
+    	cout << "Hesaba giris yaptiniz.." << endl << "Hosgeldiniz.";
+    }
+    else if(isiminput!=isim && sifreinput==sifre) {
+    	cout << "Kullanici adini yanlis girdiniz." << endl;
+    }
+    else if(isiminput== isim && sifreinput!=sifre) {
+    	cout << "Sifreyi yanlis girdiniz." << endl;
+    }
+    else {
+    	cout << "Sifreyi ve Kullanici adini yanlis girdiniz.";
+    }
+	return 0;
+}
