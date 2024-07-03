@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	string sifre="sifre11";
+	string sifregiris;
+
+	do {
+		cout << "Sifre giriniz : " << endl;
+		cin >> sifregiris;
+		if(sifregiris != sifre) {
+			cout << "Sifreyi yanlis girdiniz."<< endl;
+		}
+
+	}while(sifregiris!= sifre);
+
+	cout << "Sifreyi dogru girdiniz." << endl;
+}
