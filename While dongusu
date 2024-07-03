@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int tekrar=0;
+	while (tekrar<30) {
+		cout << "Sayinin suanki degeri : " << tekrar << endl;
+		tekrar = tekrar + 1;
+	}
+}
