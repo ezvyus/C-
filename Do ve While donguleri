@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int a=0;
+	while (a < 10 ) {
+		if (a == 5 ) {
+			break;
+		}
+		cout << "Sayi : " << a << endl;
+		a++;
+	}
+	int b = 0;
+	while (b<10){
+		if (b==5 || b==10) {
+			b++;
+			continue;
+		}
+		cout << "Sayinin suanki degeri : " << b << endl;
+		b++;
+	}
+}
