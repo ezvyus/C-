@@ -6,7 +6,9 @@ int main() {
 	string yazi2 = "Iki string endline olmadan yazilirsa yan yana gozukur.";
 	string yazi3 = "Iki string endline ile yazilirsa alt alta gozukur.";
 	string yazi4 = yazi1 + yazi2;
-	cout << "Iki string toplanirsa yan yana yazilir." << yazi4 << endl;
+	cout << "Iki string toplanirsa yan yana yazilir;"<< endl << yazi4 << endl;
+	cout << "-------------" << endl;
 	cout << yazi1 << endl << yazi3;
 	return 0;
 }
+
