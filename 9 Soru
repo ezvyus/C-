@@ -1,0 +1,134 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	/*1. Soru*/
+	for(int i=0 ; i < 10 ; i++) {
+		cout << "Sayimizin suanki degeri : " << i << endl;
+	}
+	/*2. Soru*/
+	for(int i=0 ; i <101 ; i= i+2) {
+		cout << "100'e kadar olan cift sayilar : " << i << endl;
+	}
+	/*3. Soru*/
+	int faktoriyel = 1;
+	int sayi;
+	cout << "Faktoriyelini ogrenmek istediginiz bir sayi giriniz : ";
+	cin >> sayi;
+	for(int i=1 ; i <= sayi ; i++){
+		faktoriyel *= i;
+		cout << faktoriyel << endl;
+	}
+	cout << "Girdiginiz sayinin faktoriyeli : " << faktoriyel << endl;
+
+	/*4. Soru*/
+	int sayi1;
+	int a;
+	int kontrol;
+	cout << "Bir sayi giriniz : ";
+	cin >> sayi1;
+	if(sayi<2) {
+		cout << "Lutfen 2' den buyuk bir rakam giriniz. " << endl;
+
+	}
+	for(a = 2 ; a <=sayi1/2 ; a++) {
+		if(sayi % a==0) {
+			kontrol=2;
+			break;
+		}
+	}
+	if(kontrol==2) {
+		cout << "Girdiginiz sayi asaldir. " << endl;
+	}
+	else{
+		cout << "Girdiginiz sayi asal degildir. " << endl;
+	}
+	/*5. Soru*/
+	int dongu;
+	for(int i=0 ; i < 101 ; i++) {
+		if(i==100) {
+			cout << "Sayinin suanki degeri : " << dongu << endl;
+			i = i + 1;
+			dongu = dongu + i;
+			break;
+		}
+
+	}
+	/*6. Soru*/
+	int c;
+	int sayi2;
+	int bir = 0;
+	int iki = 1;
+	int siradaki;
+	bir = 0;
+	iki = 1;
+	cout << "Bir sayi giriniz giriniz: ";
+	cin >> sayi2;
+	cout << "Fibonacci serisi:";
+
+	for(c = 1; c < sayi2; c++)
+	{
+	    cout << "\n" << bir <<endl;
+	    siradaki = bir + iki;
+	    bir = iki;
+	    iki = siradaki;
+	}
+
+
+	/*7. Soru*/
+	string metin;
+
+    cout << "Ters cevirmek istediginiz  bir metin giriniz: "<< endl;
+	cin >> metin;
+
+	for (int uzunluk = metin.size(); uzunluk != 0; uzunluk--, cout << metin[uzunluk]<< endl);
+
+	/* Soru 8*/
+	int sayi3;
+	int sayi4;
+	int islem;
+	cout << "Hesap Makinesine hosgeldiniz!!! " << endl;
+	cout << "Islem tablosu : " << endl;
+	cout << "1. Islem ; Toplama" << endl;
+	cout << "2. Islem ; Cikarma" << endl;
+	cout << "3. Islem ; Carpma " << endl;
+	cout << "4. Islem ; Bolme" << endl;
+	cout << "Gireceginiz islem 1 ile 4 arasinda olmalidir yoksa gecersiz sayilacaktir. " << endl;
+	cout << "Bir islem giriniz : " << endl;
+	cin >> islem;
+	cout << "Birinci sayiyi giriniz : " << endl;
+	cin >> sayi3;
+	cout << "Ikinci sayiyi giriniz : " << endl;
+	cin >> sayi4;
+	if(islem == 1) {
+		cout << "Girdiginiz islem toplama islemidir. " << endl;
+		cout << "Islemin sonucu : " << sayi3 + sayi4 << endl;
+	}
+	else if(islem == 2) {
+		cout << "Girdiginiz islem cikarma islemidir. " << endl;
+		cout << "Islemin sonucu : " << sayi3 - sayi4 << endl;
+	}
+	else if(islem == 3) {
+		cout << "Girdiginiz islem carpma islemidir. " << endl;
+		cout << "Islemin sonucu : " << sayi3 * sayi4 << endl;
+	}
+	else if(islem == 4) {
+		cout << "Girdiginiz islem bolme islemidir. " << endl;
+		cout << "Islemin sonucu : " << sayi3 / sayi4 << endl;
+	}
+	else {
+		cout<<"Hatali islem girdiniz." << endl;
+	}
+
+	/*Soru 9*/
+	for(int i=0 ; i < 51 ; i++) {
+		if (i%2==0) {
+			cout << "50 nin icindeki cift sayi degerleri : " << i << endl;
+		}
+		else if(i%1==0) {
+			cout << "50 nin icindeki tek sayi degerleri : " << i << endl;
+		}
+	}
+
+	return 0;
+}
