@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+
+
+int main() {
+	int metin[] = {1,2,3,4,5};
+
+	for (int metinuzunluk = sizeof(metin)/sizeof(metin[0]) ; metinuzunluk != 0; metinuzunluk--, cout << metinuzunluk<< endl);
+	return 0;
+}
