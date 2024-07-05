@@ -1,0 +1,39 @@
+/*Header dosyası*/
+#ifndef EMPLOYEE_H_
+#define EMPLOYEE_H_
+#include <iostream>
+
+using namespace std;
+
+class Employee{
+	string name;
+	int salary;
+	int id;
+
+	void showInfos();
+};
+
+
+#endif /* EMPLOYEE_H_ 
+
+/* Source Dosyası */
+#include "Employee.h"
+
+
+void Employee::showInfos() { 
+	cout << "Id : " << Employee::id << endl;
+	cout << "Ismi : " << Employee::name << endl;
+	cout << "Maaş : " << Employee::salary << endl;
+} 
+
+/* Main Dosyası */
+#include "Employee.h"
+
+int main() {
+	Employee employee;
+	employee.id="1"
+	employee.name="Hakan"
+	employee.salary="1500"
+	employee.showInfos();
+	return 0;
+}
