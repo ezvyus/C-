@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+class Kutuphane{
+public:
+	string kitapadi;
+	string yazar;
+
+	void tellName() {
+		cout << "Bu kitabın adı : " << kitapadi;
+	}
+};
+
+int main() {
+	Kutuphane kitap1;
+	Kutuphane kitap2;
+
+	kitap1.kitapadi = "Nutuk";
+	kitap1.yazar= "A";
+	kitap2.kitapadi = "Kitap";
+	kitap2.yazar = "Yazar";
+
+	cout << "1. Kitabın adı ve yazarı : " << kitap1.kitapadi << endl << kitap1.yazar << endl;
+	cout << "2. Kitabın adı ve yazarı : " << kitap2.kitapadi << endl << kitap2.yazar << endl;
+
+	kitap1.tellName();
+
+	return 0;
+}
