@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+
+class Employee {
+private:
+	string name;
+	int salary;
+	int id;
+
+public:
+	Employee(string name, int salary, int id) {
+		this->name = name;
+		this->salary = salary;
+		this->id = id;
+	}
+	void showinfos(){
+		cout<< "Kisinin ismi : " << name << endl;
+		cout << "Kisiinin maasi : " << salary << endl;
+		cout << "Kisinin kimligi : " << id << endl;
+	}
+};
+
+
+int main() {
+
+	Employee employee("Hakan", 2500, 12312084423);
+
+	employee.showinfos();
+
+
+	return 0;
+}
