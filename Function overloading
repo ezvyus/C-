@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+void naber() {
+	cout << "Naber" << endl;
+};
+
+void naber(string name) {
+	cout << "Naber " << name << endl;
+}
+
+void naber(string name1, string name2) {
+	cout << "Naber " << name1 << name2 << endl;
+}
+
+int main() {
+
+	naber();
+
+	naber("Hakan");
+
+	naber("Ahmet ", "Mehmet");
+
+	return 0;
+}
