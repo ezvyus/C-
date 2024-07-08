@@ -15,9 +15,9 @@ public:
 		this->id = id;
 	}
 	void showinfos(){
-		cout<< "Kisinin ismi : " << name << endl;
-		cout << "Kisiinin maasi : " << salary << endl;
-		cout << "Kisinin kimligi : " << id << endl;
+		cout<< "Kisinin ismi : " << this->name << endl;
+		cout << "Kisiinin maasi : " << this->salary << endl;
+		cout << "Kisinin kimligi : " << this->id << endl;
 	}
 };
 
