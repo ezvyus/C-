@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+
+class user{
+public:
+	static int userr;
+	Users() {
+		userr = userr + 1;
+		cout << "Yeni kullanici olusturuldu." << endl;
+	}
+};
+
+int user::userr = 0;
+
+int main() {
+
+	user user1;
+	user user2;
+	user user3;
+	user user4;
+
+	cout << user::userr << endl;
+
+	return 0;
+}
