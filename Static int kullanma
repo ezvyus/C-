@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+
+void arttirma() {
+	
+	static int i = 3;	
+	i++;
+}
+
+int main() {
+	
+	arttirma();
+	arttirma();
+	arttirma();
+	
+	return 0;
+}
