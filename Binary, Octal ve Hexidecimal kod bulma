@@ -1,0 +1,66 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+int p;
+cout << "Bir işlem seçiniz : " << endl;
+cout << "1. İşlem, Binary kodu yazdırır" << endl;
+cout << "2. İşlem, Octal kodu yazdırır" << endl;
+cout << "3. İşlem, Hexidecimal kodu yazdırır" << endl;
+cin >> p;
+
+if(p==3) {
+	int n,i=0;
+	char hexaDec[100];
+	cout << "Decimal bir sayı giriniz : " << endl;
+	cin >> n;
+	while(n != 0) {
+		int temp=0;
+		temp = n%16;
+		if(temp < 10) {
+			hexaDec[i]=temp+48;
+			i++;
+
+		}
+		else{
+			hexaDec[i]=temp+55;
+			i++;
+		}
+		cout << "Hexadecimal sayı : " << endl;
+		for(int j=i-1 ; j>=0; j--){
+			cout << hexaDec[j];
+
+		}
+		break;
+	}
+}
+else if(p==2) {
+	int num, i, temp=0 , a[20];
+	cout << "Decimal bir sayı giriniz : " << endl;
+	cin >> num;
+	for(i=0 ; num!=0 ; i++) {
+		a[i]=num%8;
+		num=num/8;
+	}
+	cout << "Octal sayı : " << endl;
+	for (i=i-1 ; i>=0 ; i--){
+		cout << a[i];
+	}
+
+}
+else if(p==1) {
+	int a,b;
+		cout << "Binary'e çevirmek istediğiniz sayıyı giriniz: " << endl;
+		cin >> a;
+		cout << "Girdiğiniz sayının binary'si : " << a << endl;
+		while(a>0) {
+			b=a%2;
+			cout<<b;
+			a/=2;
+		}
+}
+else {
+	cout << "Yanlış işlem girdiniz.";
+}
+	return 0;
+}
