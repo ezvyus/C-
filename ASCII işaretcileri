@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+	int num;
+
+	for (num = 32; num <= 255; num++){
+		cout << "  " << num << " = " << (char) num << endl;
+	}
+
+	return 0;
+}
