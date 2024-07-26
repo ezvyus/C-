@@ -1,0 +1,75 @@
+#include <iostream>
+
+int main() {
+int devam;
+std::cout<<"Isleme devam etmek istiyormusunuz, istiyorsaniz 1'i istemiyorsaniz 2'yi tuslayin.";
+std::cin>>devam;
+if(devam==1) {
+    while(devam==1) {
+        int devam;
+        std::cout<<"Isleme devam etmek istiyormusunuz, istiyorsaniz 1'i istemiyorsaniz 2'yi tuslayin.";
+        std::cin>>devam;
+        int p;
+        std::cout << "Bir işlem seçiniz : " << std::endl;
+        std::cout << "1. İşlem, Binary kodu yazdırır" <<std::endl;
+        std::cout << "2. İşlem, Octal kodu yazdırır" <<std::endl;
+        std::cout << "3. İşlem, Hexidecimal kodu yazdırır" << std::endl;
+        std::cin >> p;
+
+        if(p==3) {
+	        int n,i=0;
+	        char hexaDec[100];
+	        std::cout << "Decimal bir sayı giriniz : " << std::endl;
+	        std::cin >> n;
+	            while(n != 0) {
+		        int temp=0;
+		        temp = n%16;
+		        if(temp < 10) {
+			        hexaDec[i]=temp+48;
+			        i++;
+
+		        }
+		        else{
+			        hexaDec[i]=temp+55;
+		        	i++;
+        		}
+	        	std::cout << "Hexadecimal sayı : " << std::endl;
+		        for(int j=i-1 ; j>=0; j--){
+		        	std::cout << hexaDec[j];
+
+		        }
+		        break;
+	        }
+        }
+        else if(p==2) {
+        	int num, i, temp=0 , a[20];
+        	std::cout << "Decimal bir sayı giriniz : " <<std::endl;
+	        std::cin >> num;
+	        for(i=0 ; num!=0 ; i++) {
+	        	a[i]=num%8;
+	        	num=num/8;
+        	}   
+	        std::cout << "Octal sayı : " << std::endl;
+	        for (i=i-1 ; i>=0 ; i--){
+	        	std::cout << a[i];
+        	}
+
+        }
+        else if(p==1) {
+        	int a,b;
+	       	std::cout << "Binary'e çevirmek istediğiniz sayıyı giriniz: " <<std::endl;
+    		std::cin >> a;
+    		std::cout << "Girdiğiniz sayının binary'si : " << a <<std::endl;
+	    	while(a>0) {
+    			b=a%2;
+	    		std::cout<<b;
+	    		a/=2;
+		    }
+        }
+        else {
+    	    std::cout << "Yanlış işlem girdiniz.";
+         }
+    }
+}
+    return 0;
+}
